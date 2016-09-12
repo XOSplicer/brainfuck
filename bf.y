@@ -17,14 +17,6 @@ void yyerror(const char *s) {
 int bf_array[BF_ARRAY_SIZE];
 int bf_array_pointer = 0;
 
-void bf_pinc();
-void bf_pdec();
-void bf_vinc();
-void bf_vdec();
-void bf_vset(int i);
-void bf_print();
-void bf_read();
-
 bf_instruction_t* bf_new_instruction(action_t action, int value, bf_instruction_t* next, bf_instruction_t* sub);
 
 bf_instruction_t* bf_instruction_list;
